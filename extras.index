@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="extras.index" url="https://raw.githubusercontent.com/fourthfencer/AuroraBuilderExtras/master/extras.index" />
+		</update>
+	</info>
+	<files>
+		<file name="class-witch.xml" url="https://raw.githubusercontent.com/fourthfencer/AuroraBuilderExtras/master/extras/class-witch.xml" />
+        <file name="witch-extended.xml" url="https://raw.githubusercontent.com/fourthfencer/AuroraBuilderExtras/master/extras/witch-extended.xml" />
+		
+	</files>
+</index>

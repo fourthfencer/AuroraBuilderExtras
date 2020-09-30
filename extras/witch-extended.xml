@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<description>Additional content for The Witch class from Magehand Pres.</description>
+		<author url="https://mfov.magehandpress.com/search/label/Witch">Mage Hand Press</author>
+		<update version="0.1">
+			<file name="class-witch.xml" url="https://raw.githubusercontent.com/fourthfencer/AuroraBuilderExtras/master/extras/witch-extended.xml" />
+		</update>
+	</info>
+    <!-- Additional Witch's Crafts-->
+    <element name="Steel Magic" type="Archetype" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_WITCH_STEEL_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Secret covens throughout the Material Plane practice their magicks by weaving spells into their blades. Maniacally cackling and whirling their way across the battlefield, these witches weave their curses into a bloody tapestry whenever they bring their steel to bear.</p>
+			
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_CRAFT_SPELLS" />
+            <div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_HEX_DARK_STEEL" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_CACKLING_KILLER" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_SOUL_EATER" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_SHRIEKING_STRIKE" />
+		</description>
+		<sheet display="false">
+			<description>Secret covens throughout the Material Plane practice their magicks by weaving spells into their blades. Maniacally cackling and whirling their way across the battlefield, these witches weave their curses into a bloody tapestry whenever they bring their steel to bear.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_HEX_DARK_STEEL" level="3"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_CRAFT_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_CACKLING_KILLER" level="6"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_SOUL_EATER" level="10"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_SHRIEKING_STRIKE" level="14"/>
+		</rules>
+	</element>
+	<element name="Dark Steel" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_HEX_DARK_STEEL">
+		<supports>Hex</supports>
+		<description>
+			<p>Starting at 3rd level, you have learned a secret hex associated with the profane rites of long-forgotten covens. When you grasp a weapon in one hand, and nothing in your other hand, you can use your bonus action to spread your curse into its steel. You gain the following benefits until the end of your next turn:</p>
+            <p class="indent">The weapon serves as an arcane focus.</p>
+            <p class="indent">You add your Charisma modifier to AC, as long as you are not wearing medium or heavy armor or holding a shield.</p>
+            <p class="indent">You can use your Charisma modifier for the attack and damage rolls you make with a one-handed weapon.</p>
+		</description>
+		<sheet>
+			<description>
+                <p>When you grasp a weapon in one hand, and nothing in your other hand, you can use your bonus action to spread your curse into its steel. You gain the following benefits until the end of your next turn:</p>
+                <p class="indent">The weapon serves as an arcane focus.</p>
+                <p class="indent">You add your Charisma modifier to AC, as long as you are not wearing medium or heavy armor or holding a shield.</p>
+                <p class="indent">You can use your Charisma modifier for the attack and damage rolls you make with a one-handed weapon.</p>
+            </description>
+		</sheet>
+	</element>
+	<element name="Steel Magic Craft Spells" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_CRAFT_SPELLS">
+		<description>
+			<p>Spell Level : Spells</p>
+			<p>1st : <i>identify, mage armor</i></p>
+			<p>2nd : <i>heat metal, magic weapon</i></p>
+			<p>3rd : <i>blink, haste</i></p>
+			<p>4th : <i>freedom of movement, death ward</i></p>
+			<p>5th : <i>animate objects, hallow</i></p>
+		</description>
+		<sheet display="false">
+			<description><p>Spell Level : Spells</p>
+			<p>1st : <i>identify, mage armor</i></p>
+			<p>2nd : <i>heat metal, magic weapon</i></p>
+			<p>3rd : <i>blink, haste</i></p>
+			<p>4th : <i>freedom of movement, death ward</i></p>
+			<p>5th : <i>animate objects, hallow</i></p></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="5" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="9" spellcasting="Witch"/>
+		</rules>
+	</element>
+	<element name="Cackling Killer" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_CACKLING_KILLER">
+		<description>
+			<p>At 6th level, when you use your Cackle feature, you can make one additional weapon attack when you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>When you use your Cackle feature, you can make one additional weapon attack when you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Soul Eater" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_SOUL_EATER">
+		<description>
+			<p>Starting at 10th level, as a bonus action, you can plunge your weapon into your familiar, drawing it forth cloaked in green flame. Your familiar dies instantly. Until you take a short or long rest, you can't summon your familiar again, and that weapon deals an additional 1d8 fire damage on a hit.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>As a bonus action, you can plunge your weapon into your familiar, drawing it forth cloaked in green flame. Your familiar dies instantly. Until you take a short or long rest, you can't summon your familiar again, and that weapon deals an additional 1d8 fire damage on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Shrieking Strike" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_STEEL_MAGIC_SHRIEKING_STRIKE">
+		<description>
+			<p>Starting at 14th level, your accursed magic has seeped into your weapon. When you make a melee attack against a hostile creature, the target must make a Wisdom saving throw against your witch spell save DC. On a failed save, it is frightened until the end of your next turn.</p>
+            <p class="indent">You can use this feature a number of times equal to your Charisma modifier and regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>When you make a melee attack against a hostile creature, the target must make a Wisdom saving throw against your witch spell save DC. On a failed save, it is frightened until the end of your next turn.</description>
+		</sheet>
+	</element>
+    <element name="Lunar Magic" type="Archetype" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_WITCH_LUNAR_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>The moon is a potent symbol for many witches - especially those who are forced to practice their art incognito. To them, it represents a guiding light in the darkness, a confidant or keeper of secrets, and a link to the powerful natural forces that govern time and tide. Lunar witches are the masters of the night: shadowy, quiet and exceptionally difficult to pin down.</p>
+			
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_CRAFT_SPELLS" />
+            <div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_HEX_LUNACY" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_UNDER_COVER_OF_DARKNESS" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_EVERLASTING_NIGHT" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_MOONSIGHT" />
+		</description>
+		<sheet display="false">
+			<description>The moon is a potent symbol for many witches - especially those who are forced to practice their art incognito. To them, it represents a guiding light in the darkness, a confidant or keeper of secrets, and a link to the powerful natural forces that govern time and tide. Lunar witches are the masters of the night: shadowy, quiet and exceptionally difficult to pin down.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_HEX_LUNACY" level="3"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_CRAFT_SPELLS" level="3"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_UNDER_COVER_OF_DARKNESS" level="6"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_EVERLASTING_NIGHT" level="10"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_MOONSIGHT" level="14"/>
+		</rules>
+	</element>
+	<element name="Lunacy" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_HEX_LUNACY">
+		<supports>Hex</supports>
+		<description>
+			<p>Starting at 3rd level, you have mastered a hex that wracks a creature with waves of pain. As an action, choose one creature you can see within 60 feet to make a Constitution saving throw. On a failed save, the creature is in LUNACY. The creature has disadvantage on concentration checks. At the beginning of its turn, roll any die. On an odd roll, the creature has disadvantage on attack rolls until the end of its turn. This effect lasts until the beginning of your next turn.</p>
+		</description>
+		<sheet>
+			<description>As an action, choose one creature you can see within 60 feet to make a Constitution saving throw. On a failed save, the creature is in LUNACY. The creature has disadvantage on concentration checks. At the beginning of its turn, roll any die. On an odd roll, the creature has disadvantage on attack rolls until the end of its turn. This effect lasts until the beginning of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Lunar Magic Craft Spells" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_CRAFT_SPELLS">
+		<description>
+			<p>Spell Level : Spells</p>
+			<p>1st : <i>faerie fire, sleep</i></p>
+			<p>2nd : <i>darkvision, moonbeam</i></p>
+			<p>3rd : <i>Melf's minute meteors, nondetection</i></p>
+			<p>4th : <i>confusion, Mordenkainen's private sanctum</i></p>
+			<p>5th : <i>dream, seeming</i></p>
+		</description>
+		<sheet display="false">
+			<description><p>Spell Level : Spells</p>
+			<p>1st : <i>faerie fire, sleep</i></p>
+			<p>2nd : <i>darkvision, moonbeam</i></p>
+			<p>3rd : <i>Melf's minute meteors, nondetection</i></p>
+			<p>4th : <i>confusion, Mordenkainen's private sanctum</i></p>
+			<p>5th : <i>dream, seeming</i></p></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKVISION" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_MELFS_MINUTE_METEORS" level="5" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="7" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="9" spellcasting="Witch"/>
+		</rules>
+	</element>
+	<element name="Under Cover of Darkness" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_UNDER_COVER_OF_DARKNESS">
+		<description>
+			<p>By 6th level, you have developed a supernatural affinity for shadows. When you are in an area of dim light or darkness, you can use your bonus action to take the Hide action.</p>
+		</description>
+		<sheet>
+			<description>When you are in an area of dim light or darkness, you can use your bonus action to take the Hide action.</description>
+		</sheet>
+	</element>
+	<element name="Everlasting Night" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_EVERLASTING_NIGHT">
+		<description>
+			<p>At 10th level, you can use your accursed powers to suppress light around you. As an action, you can cause all areas of direct sunlight within 300 feet of yourself to become bright light, bright light to become dim and dim light to become total darkness for ten minutes. Sources of light are still visible; only the illumination they provide is reduced.</p>
+            <p class="indent">After using this ability, you must take a short or long rest before using it again.</p>
+        </description>
+		<sheet usage="1/Short Rest">
+			<description>As an action, you can cause all areas of direct sunlight within 300 feet of yourself to become bright light, bright light to become dim and dim light to become total darkness for ten minutes. Sources of light are still visible; only the illumination they provide is reduced.</description>
+		</sheet>
+	</element>
+	<element name="Moonsight" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_LUNAR_MAGIC_MOONSIGHT">
+		<description>
+			<p>At 14th level, you can see through illusions with ease. You have truesight out to a range of 60 feet and you perceive a shimmering halo of moonlight around any creature you can see that has the shapechanger subtype.</p>
+		</description>
+		<sheet>
+			<description>You have truesight out to a range of 60 feet and you perceive a shimmering halo of moonlight around any creature you can see that has the shapechanger subtype.</description>
+		</sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+        </rules>
+	</element>
+    <element name="Gingerbread Magic" type="Archetype" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_WITCH_GINGERBREAD_MAGIC">
+		<supports>Craft</supports>
+		<description>
+			<p>Witches that learn the fine details of Gingerbread Magic become masters in all things confectionery. Some witches, particularly those with a sweet tooth of their own, use their magic to bring joy to others: for example, turning pebbles into gumdrops, and giving them to children. Evil gingerbread witches, however, have a penchant for cruelty, and use their delectable powers to tempt others into traps, or to transform their valuables into sweet treats.</p>
+			
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_CRAFT_SPELLS" />
+            <div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_HEX_SWEET_TOOTH" />
+            <div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_GINGERBREAD_FAMILIAR" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_SUGAR_RUSH" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_CANDIED_DECOY" />
+			<div element="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_ROTTEN_TOOTH" />
+		</description>
+		<sheet display="false">
+			<description>Witches that learn the fine details of Gingerbread Magic become masters in all things confectionery. Some witches, particularly those with a sweet tooth of their own, use their magic to bring joy to others: for example, turning pebbles into gumdrops, and giving them to children. Evil gingerbread witches, however, have a penchant for cruelty, and use their delectable powers to tempt others into traps, or to transform their valuables into sweet treats.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_HEX_SWEET_TOOTH" level="3"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_CRAFT_SPELLS" level="3"/>
+            <grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_GINGERBREAD_FAMILIAR" level="3"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_SUGAR_RUSH" level="6"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_CANDIED_DECOY" level="10"/>
+			<grant type="Archetype Feature" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_ROTTEN_TOOTH" level="14"/>
+		</rules>
+	</element>
+	<element name="Sweet Tooth" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_HEX_SWEET_TOOTH">
+		<description>
+			<p>Starting at 3rd level, your touch can make anything sweet. As an action, you can touch an unattended nonmagical object that can fit within a 1-foot cube and transform it into an edible candy replica. You choose the type of candy it is made out of, whether it be gingerbread, candy cane, licorice, or a combination of various candies.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can touch an unattended nonmagical object that can fit within a 1-foot cube and transform it into an edible candy replica. You choose the type of candy it is made out of, whether it be gingerbread, candy cane, licorice, or a combination of various candies.</description>
+		</sheet>
+	</element>
+    <element name="Gingerbread Familiar" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_GINGERBREAD_FAMILIAR">
+		<description>
+			<p>Also at 3rd level, when you summon your familiar, you can conjure a version of it made from gingerbread. Your gingerbread familiar has the same statistics as it normally would, but it has blindsight with a range of 10 feet and the following traits:</p>
+            <p class="indent"><strong>Distracting Aroma</strong> A hostile creature that is within 5 feet of the familiar has disadvantage on attack rolls against targets other than it.</p>
+            <p class="indent"><strong>False Appearance</strong> While the familiar remains motionless, it is indistinguishable from an ordinary gingerbread construction.</p>
+            <p class="indent"><strong>Fragile</strong> Your familiar has 25% fewer hit points</p>
+		</description>
+		<sheet>
+			<description><p>When you summon your familiar, you can conjure a version of it made from gingerbread. Your gingerbread familiar has the same statistics as it normally would, but it has blindsight with a range of 10 feet and the following traits:</p>
+            <p class="indent"><strong>Distracting Aroma</strong> A hostile creature that is within 5 feet of the familiar has disadvantage on attack rolls against targets other than it.</p>
+            <p class="indent"><strong>False Appearance</strong> While the familiar remains motionless, it is indistinguishable from an ordinary gingerbread construction.</p>
+            <p class="indent"><strong>Fragile</strong> Your familiar has 25% fewer hit points</p></description>
+		</sheet>
+	</element>
+	<element name="Gingerbread Magic Craft Spells" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_CRAFT_SPELLS">
+		<description>
+			<p>Spell Level : Spells</p>
+			<p>1st : <i>hideous laughter, sleep</i></p>
+			<p>2nd : <i>arcane lock, protection from poison</i></p>
+			<p>3rd : <i>create food and water, tiny hut</i></p>
+			<p>4th : <i>confusion, hallucinatory terrain</i></p>
+			<p>5th : <i>animate objects, dream</i></p>
+		</description>
+		<sheet display="false">
+			<description><p>Spell Level : Spells</p>
+			<p>1st : <i>hideous laughter, sleep</i></p>
+			<p>2nd : <i>arcane lock, protection from poison</i></p>
+			<p>3rd : <i>create food and water, tiny hut</i></p>
+			<p>4th : <i>confusion, hallucinatory terrain</i></p>
+			<p>5th : <i>animate objects, dream</i></p></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_LOCK" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" level="3" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" level="5" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_TINY_HUT" level="5" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Witch"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Witch"/>
+		</rules>
+	</element>
+	<element name="Sugar Rush" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_SUGAR_RUSH">
+		<description>
+			<p>By 6th level, as a bonus action, you can give an ally you touch a burst of quickly-fading energy. The creature can take the Dash, Dodge, or Disengage action as a bonus action on its next turn.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you can give an ally you touch a burst of quickly-fading energy. The creature can take the Dash, Dodge, or Disengage action as a bonus action on its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Candied Decoy" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_CANDIED_DECOY">
+		<description>
+			<p>Starting at 10th level, you can use your action to conjure an identical duplicate of yourself, created from chocolate, candy, and other sweet treats, in an empty space within 5 feet of you. You can choose to swap places with the decoy when you conjure it. The decoy has AC 10 and 10 HP, and appears at first to be indistinguishable from you, but cracks in its candy shell appear when it takes damage. The decoy moves when you do, to a location that you choose, but can’t take actions. The decoy collapses into an inanimate pile of candy when it is reduced to 0 HP, or after 1 minute. Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you can conjure an identical duplicate of yourself, created from chocolate, candy, and other sweet treats, in an empty space within 5 feet of you. You can choose to swap places with the decoy when you conjure it. The decoy has AC 10 and 10 HP, and appears at first to be indistinguishable from you, but cracks in its candy shell appear when it takes damage. The decoy moves when you do, to a location that you choose, but can’t take actions. The decoy collapses into an inanimate pile of candy when it is reduced to 0 HP, or after 1 minute. </description>
+		</sheet>
+	</element>
+	<element name="Rotten Tooth" type="Archetype Feature" source="Mage Hand Press" id="ID_MHP_ARCHETYPE_FEATURE_WITCH_GINGERBREAD_MAGIC_ROTTEN_TOOTH">
+		<description>
+			<p>At 14th level, when you use your Sweet Tooth hex, you can target a living creature with it to transform it into a confectionery statue. While you concentrate on the hex, it acts as the spell flesh to stone, but transforms the target into edible candy instead of stone. Once you use this ability, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you use your Sweet Tooth hex, you can target a living creature with it to transform it into a confectionery statue. While you concentrate on the hex, it acts as the spell flesh to stone, but transforms the target into edible candy instead of stone.</description>
+		</sheet>
+	</element>
+    <!--Extended Spell List-->
+    <append id="ID_PHB_SPELL_HEX">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WITCH_BOLT">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ANIMATE_DEAD">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTAGION">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HALLOW">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CREATE_UNDEAD">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MORDENKAINENS_SWORD">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CREATE_BONFIRE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CONTROL_FLAMES">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_FROSTBITE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_GUST">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_INFESTATION">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MOLD_EARTH">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_PRIMAL_SAVAGERY">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SHAPE_WATER">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_TOLL_THE_DEAD">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_BEAST_BOND">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CAUSE_FEAR">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ICE_KNIFE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_EARTHBIND">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MIND_SPIKE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_PYROTECHNICS">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SHADOW_BLADE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ENEMIES_ABOUND">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_LIFE_TRANSFERENCE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SUMMON_LESSER_DEMONS">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_TINY_SERVANT">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CHARM_MONSTER">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_STORM_SPHERE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SUMMON_GREATER_DEMON">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_VITRIOLIC_SPHERE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_DANSE_MACABRE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ENERVATION">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_IMMOLATION">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_INFERNAL_CALLING">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_STEEL_WIND_STRIKE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SYNAPTIC_STATIC">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_CREATE_HOMUNCULUS">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_INVESTITURE_OF_ICE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_INVESTITURE_OF_STONE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_INVESTITURE_OF_WIND">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MENTAL_PRISON">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SCATTER">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_SOUL_CAGE">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_POWER_WORD_PAIN">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ABI_DALZIMS_HORRID_WILTING">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_ILLUSORY_DRAGON">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MADDENING_DARKNESS">
+        <supports>Witch</supports>
+    </append>
+    <append id="ID_XGTE_SPELL_MASS_POLYMORPH">
+        <supports>Witch</supports>
+    </append>
+</elements>
