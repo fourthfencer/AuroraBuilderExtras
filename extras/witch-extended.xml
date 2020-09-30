@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-		<description>Additional content for The Witch class from Magehand Pres.</description>
+		<description>Additional content for The Witch class from Magehand Press.</description>
 		<author url="https://mfov.magehandpress.com/search/label/Witch">Mage Hand Press</author>
 		<update version="0.1">
 			<file name="class-witch.xml" url="https://raw.githubusercontent.com/fourthfencer/AuroraBuilderExtras/master/extras/witch-extended.xml" />

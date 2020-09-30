@@ -8,6 +8,5 @@
 	<files>
 		<file name="class-witch.xml" url="https://raw.githubusercontent.com/fourthfencer/AuroraBuilderExtras/master/extras/class-witch.xml" />
         <file name="witch-extended.xml" url="https://raw.githubusercontent.com/fourthfencer/AuroraBuilderExtras/master/extras/witch-extended.xml" />
-		
 	</files>
 </index>
